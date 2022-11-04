@@ -3,9 +3,14 @@
 
 <head>
 <meta charset="utf-8">
-  <title>WpSiteHeader</title>
-  <!--base href goes here-->
-  <!--viewport meta goes here-->
+  <title>URPG Infohub</title>
+  <base href="/urpg-webapps/">
+  <script>
+    (function() {
+      window['_app_base'] = "/";
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!--angular stylesheet goes here-->
 </head>
@@ -18,8 +23,11 @@
 </head>
 
 <body>
-	<!--app-root goes here-->
-	<!--angular scripts go here-->
+	<urpg-site-header style="height: 56px; display: block;"></urpg-site-header>
+	<!--angular runtime script goes here-->
+    <!--angular polyfills script goes here-->
+    <!--angular scripts.js goes here-->
+    <!--angular main script goes here-->
 	<div class="blog-masthead">
 		<!--div class="container">
 			<nav class="blog-nav">

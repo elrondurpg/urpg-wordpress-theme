@@ -46,4 +46,11 @@ function remove_default_login_redirect() {
 }
 
 add_action('init','remove_default_login_redirect');
+
+add_action('user_register', 'update_usermeta_bar', 10, 1);
+
+function update_usermeta_bar($user_id)
+{
+    update_user_meta($user_id, 'show_admin_bar_front', "false");
+}
 ?>
